@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import M from 'materialize-css/dist/js/materialize.min.js';
 
-const AddLogModal = () => {
+const EditLogModal = () => {
    const [message, setMessage] = useState('');
    const [attention, setAttention] = useState(false);
    const [tech, setTech] = useState('');
@@ -19,9 +19,9 @@ const AddLogModal = () => {
    };
 
    return (
-      <div id="add-log-modal" className="modal" style={modalStyle}>
+      <div id="edit-log-modal" className="modal" style={modalStyle}>
          <div className="modal-content">
-            <h4 style={{ marginBottom: '40px' }}>Enter a system log</h4>
+            <h4 style={{ marginBottom: '40px' }}>Edit the system log</h4>
             <div className="row">
                <div className="input-field">
                   <input
@@ -87,4 +87,4 @@ const modalStyle = {
    padding: '10px'
 };
 
-export default AddLogModal;
+export default EditLogModal;
