@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 import M from 'materialize-css/dist/js/materialize.min.js';
 
+import TechSelectOptions from '../techs/TechSelectOptions';
 import { updateLog, clearCurrent } from '../../actions/logActions';
 
 const EditLogModal = ({ current, clearCurrent, updateLog }) => {
@@ -66,9 +67,7 @@ const EditLogModal = ({ current, clearCurrent, updateLog }) => {
                      <option value="" disabled>
                         Select Technician
                      </option>
-                     <option value="John Doe">John Doe</option>
-                     <option value="Sara Wilson">Sara Wilson</option>
-                     <option value="Sam Smith">Sam Smith</option>
+                     <TechSelectOptions />
                   </select>
                </div>
             </div>
@@ -108,7 +107,7 @@ const modalStyle = {
 };
 
 EditLogModal.propTypes = {
-   current: PropTypes.array.isRequired,
+   current: PropTypes.object.isRequired,
    clearCurrent: PropTypes.func.isRequired,
    updateLog: PropTypes.func.isRequired
 };
