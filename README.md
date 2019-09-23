@@ -5,7 +5,7 @@
 
 ## Learning
 
--  ReactJS Hooks: useState, useEffect, useRef and useContext
+-  ReactJS Hooks: useState, useEffect and useRef
 -  Redux
 
 ## Disclaimer
